@@ -72,7 +72,7 @@ kauan = {
 |---|---|---|
 | [**AgroSafe**](https://github.com/KauanForgiarini/AgroSafe) | Sistema de monitoramento e análise de risco para o agronegócio | `Python` |
 | [**FarmTech**](https://github.com/KauanForgiarini/FarmTech) | Solução tecnológica para gestão e otimização de fazendas | `Python` |
-| [**FarmTech - Cap 1 Fase 3**](https://github.com/KauanForgiarini/FarmTech-Solution-Cap-1-Fase-3) | Evolução da solução FarmTech com novos módulos e análises | `Python` |
+| [** farmtech-crop-monitor**](https://github.com/KauanForgiarini/FarmTech-Solution-Cap-1-Fase-3) | Evolução da solução FarmTech com novos módulos e análises | `Python` |
 | [**FarmTech - Fase 4**](https://github.com/KauanForgiarini/FarmTech-Fase4) | Pipeline de dados e modelos preditivos para agricultura | `Python` |
 | [**Orbit Shield**](https://github.com/KauanForgiarini/orbit-shield) | Projeto de monitoramento e proteção de sistemas | `Python` |
 
