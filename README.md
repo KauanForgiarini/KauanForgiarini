@@ -18,7 +18,7 @@ Atualmente faço parte da [**CompactJr**](https://github.com/CompactJr), empresa
 
 ```python
 kauan = {
-    "formação":  ["IA - FIAP", "Ciência da Computação - UFSM (7º semestre)"],
+    "formação":  ["IA - FIAP", "Ciência da Computação - UFSM (2º semestre)"],
     "empresa":   "CompactJr — Empresa Júnior da UFSM",
     "atuação":   "Comercial & Desenvolvimento Web",
     "foco":      ["Inteligência Artificial", "Ciência de Dados", "Python"],
