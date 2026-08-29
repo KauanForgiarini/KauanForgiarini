@@ -1,38 +1,33 @@
-# Olá! Sou o Kauan 👋
+# Kauan Forgiarini
 
-Estudante de Ciência da Computação na UFSM e de Inteligência Artificial na FIAP, ambos no 2º semestre. Atuo na [CompactJr](https://github.com/CompactJr), empresa júnior da UFSM, nas áreas Comercial e de Desenvolvimento Web.
+O fio condutor dos meus projetos é sempre a mesma pergunta: **como transformar leitura de sensor em decisão automática confiável?** Apliquei isso primeiro à irrigação de soja e, mais recentemente, à detecção de ataques em estações terrestres de satélite.
 
-Meus projetos giram em torno de **Python, Machine Learning e sistemas embarcados com ESP32**, aplicados principalmente a problemas do agronegócio e de segurança de sistemas.
+Ciência da Computação (UFSM) e Inteligência Artificial (FIAP), ambos no 2º semestre · Comercial & Dev Web na [CompactJr](https://github.com/CompactJr) · Santa Maria, RS
 
-🔭 Atualmente estudando lógica de programação, com JavaScript, CSS e Node como próximos passos para ampliar minha atuação em desenvolvimento web.
+---
 
-## 🛠️ Tecnologias
+### 🛰️ [orbit-shield](https://github.com/KauanForgiarini/orbit-shield) — detecção de intrusão em ground stations satelitais
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00427E?style=for-the-badge&logo=cplusplus&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+Em fevereiro de 2022, um cyberataque contra a rede de satélites ViaSat KA-SAT derrubou comunicações militares e civis na Europa horas antes da invasão da Ucrânia — o vetor foi a estação terrestre. O ORBIT-SHIELD é uma prova de conceito de defesa em 5 camadas para esse mesmo tipo de infraestrutura: firmware ESP32 assinando telemetria com HMAC-SHA256, API em FastAPI com rate limiting e validação anti-replay, PostgreSQL com audit log imutável, e duas camadas de Machine Learning — Isolation Forest para anomalias (**recall de 93,4%**) e Random Forest para classificação (**96,9% de acurácia**). A modelagem de ameaças segue o framework **STRIDE**, com 8 ameaças mapeadas a contramedidas específicas.
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+### 🌱 FarmTech — de irrigação automática a pipeline de regressão
 
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+Comecei simulando um ESP32 no Wokwi que decide sozinho quando irrigar soja, cruzando umidade do solo, pH, nutrientes e previsão de chuva via API. Evoluí a solução em duas frentes: um [dashboard com banco Oracle e 5 modelos de classificação](https://github.com/KauanForgiarini/farmtech-crop-monitor) para recomendação de cultura (Random Forest chegou a **~99% de acurácia**), e um [pipeline de regressão](https://github.com/KauanForgiarini/farmtech-data-pipeline) que prevê volume de irrigação, fertilização e rendimento de safra — Gradient Boosting explicou **81% da variância** no volume de irrigação, superando Regressão Linear e Ridge. Um motor de decisão em C++ traduz essas previsões em recomendações de manejo.
 
-## 🚜 Projetos
+→ [Firmware e lógica de decisão original (Fase 2)](https://github.com/KauanForgiarini/FarmTech)
 
-| Projeto | Descrição | Stack |
-|---|---|---|
-| [**AgroSafe**](https://github.com/KauanForgiarini/AgroSafe) | Sistema em terminal para registrar e analisar perdas na colheita de soja, com classificação de severidade e recomendações baseadas em parâmetros da EMBRAPA | `Python` |
-| [**FarmTech**](https://github.com/KauanForgiarini/FarmTech) | Irrigação inteligente para soja com ESP32 (simulado no Wokwi), integração com a API OpenWeather e análise estatística em R | `C++` `Python` `R` |
-| [**farmtech-crop-monitor**](https://github.com/KauanForgiarini/farmtech-crop-monitor) | Evolução do FarmTech com banco Oracle, dashboard em Streamlit e 5 modelos de ML para recomendação de culturas | `Python` `SQL` |
-| [**farmtech-data-pipeline**](https://github.com/KauanForgiarini/farmtech-data-pipeline) | Pipeline de regressão (Scikit-learn) para prever irrigação, fertilização e rendimento de safra, com dashboard e motor de decisão em C++ | `Python` `C++` |
-| [**orbit-shield**](https://github.com/KauanForgiarini/orbit-shield) | Detecção de intrusão em ground stations satelitais — firmware ESP32, API FastAPI, PostgreSQL e Machine Learning | `Python` `C++` `SQL` |
+<details>
+<summary><strong>Outros projetos</strong></summary>
+<br>
 
-## 📬 Contato
+**[AgroSafe](https://github.com/KauanForgiarini/AgroSafe)** — sistema em terminal para registrar e classificar perdas na colheita de soja, com recomendações baseadas em parâmetros da EMBRAPA.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kauanforgiarini)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kauanforgiarini@gmail.com)
+</details>
+
+---
+
+**Stack:** Python · C/C++ · R · SQL (Oracle, PostgreSQL) · FastAPI · Streamlit · Scikit-learn · ESP32
+
+🔭 Agora aprofundando lógica de programação, com JavaScript, CSS e Node como próximos passos.
+
+[LinkedIn](https://www.linkedin.com/in/kauanforgiarini) · [kauanforgiarini@gmail.com](mailto:kauanforgiarini@gmail.com)
